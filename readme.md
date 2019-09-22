@@ -8,4 +8,6 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 
 This command will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
 
+**Demo:**
+
 ![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-demo.gif)
