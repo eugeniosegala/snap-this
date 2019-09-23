@@ -10,7 +10,7 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 
 This command will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
 
-**The are 71 devices/resolutions avaialble.**
+**The are 71 devices/resolutions available.**
 
 **Demo:**
 
