@@ -5,12 +5,21 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 **Install**: 
 `npm i snap-this`
 
-**Usage**: 
-`WEBSITE=https://en.wikipedia.org/ snap-this`
+**Usage**: `WEBSITE=https://en.wikipedia.org/ snap-this`
 
-This command will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
+_Options:_ <br>
 
-**The are 71 devices/resolutions available.**
+- **WEBSITE**=https://en.wikipedia.org/ _(define the app endpoint)_
+- **SELECTOR**=".important-element" _(wait for an important element)_
+- **LOCAL_STORAGE**="demo/local-storage.js" _(set local storage information)_
+
+
+_Full command:_ <br>
+`WEBSITE=https://en.wikipedia.org/ SELECTOR=".important-element" LOCAL_STORAGE="demo/local-storage.js" snap-this`
+
+This package will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
+
+**The are 71 devices/resolutions available inside the package.**
 
 **Demo:**
 
