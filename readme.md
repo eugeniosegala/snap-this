@@ -9,6 +9,7 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 - [ ] Cookies support
 - [ ] Dynamic device list
 
+
 **Demo:**<br>
 ![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
 
