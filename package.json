@@ -1,17 +1,21 @@
 {
   "name": "snap-this",
-  "version": "1.1.9",
-  "description": "A tool to make quick screenshots for every mobile devices of your apps in a couple of seconds.",
-  "main": "index.js",
+  "version": "1.1.10",
+  "author": "Eugenio Segala",
+  "description": "A tool to make quick screenshots for every mobile devices of your apps in a couple of minutes.",
+  "keywords": ["mobile", "puppeteer", "screenshot", "devices", "testing", "responsive"],
+  "license": "MIT",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeniosegala/snap-this"
+  },
   "bin": {
     "snap-this": "./bin/snap-this"
   },
   "scripts": {
     "snap-this": "node index.js"
   },
-  "keywords": [],
-  "author": "Eugenio Segala",
-  "license": "MIT",
   "dependencies": {
     "pending-xhr-puppeteer": "^2.1.0",
     "puppeteer": "^1.20.0"
