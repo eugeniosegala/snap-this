@@ -4,11 +4,10 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 
 - [x] Simulating real devices
 - [x] Local Storage Support
-- [x] Await important elements
-- [x] Dynamic page view
+- [x] Await important elements before screenshots
+- [x] Dynamic showcase
 - [ ] Cookies support
-- [ ] Dynamic device list
-
+- [ ] Customizable device list
 
 **Demo:**<br>
 ![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
@@ -23,13 +22,13 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 _Options:_ <br>
 
 - **WEBSITE**=https://en.wikipedia.org/ _(define the app endpoint)_
-- **SELECTOR**=".important-element" _(wait for an important element)_
-- **LOCAL_STORAGE**="myfolder/local-storage.js" _(set local storage information)_
+- **SELECTOR**=".important-element" _(wait for an important item before the snap)_
+- **LOCAL_STORAGE**="local-storage.js" _(set path for local storage information)_
 
-[Local storage template](/demo/local_sample.js)
+[Local storage template](https://github.com/eugeniosegala/snap-this/blob/master/demo/local_sample.js)
 
 _Full command:_ <br>
-`WEBSITE=https://en.wikipedia.org/ SELECTOR=".important-element" LOCAL_STORAGE="demo/local-storage.js" snap-this`
+`WEBSITE=https://en.wikipedia.org/ SELECTOR=".important-element" LOCAL_STORAGE="local-storage.js" snap-this`
 
 This package will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
 
