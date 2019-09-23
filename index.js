@@ -14,7 +14,7 @@ if (!fs.existsSync(dir)){
 
 const snapThis = async () => {
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ ignoreHTTPSErrors: true });
 
   console.log('Starting...');
   console.log('Taking screenshots...');
