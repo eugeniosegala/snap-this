@@ -11,7 +11,7 @@ _Options:_ <br>
 
 - **WEBSITE**=https://en.wikipedia.org/ _(define the app endpoint)_
 - **SELECTOR**=".important-element" _(wait for an important element)_
-- **LOCAL_STORAGE**="demo/local-storage.js" _(set local storage information)_
+- **LOCAL_STORAGE**="myfolder/local-storage.js" _(set local storage information)_
 
 
 _Full command:_ <br>
