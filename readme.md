@@ -13,6 +13,7 @@ _Options:_ <br>
 - **SELECTOR**=".important-element" _(wait for an important element)_
 - **LOCAL_STORAGE**="myfolder/local-storage.js" _(set local storage information)_
 
+[Local storage template](/demo/local_sample.js)
 
 _Full command:_ <br>
 `WEBSITE=https://en.wikipedia.org/ SELECTOR=".important-element" LOCAL_STORAGE="demo/local-storage.js" snap-this`
