@@ -1,5 +1,7 @@
 **Snap This**
 
+![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
+
 Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes!
 
 - [x] Simulating real devices
@@ -31,6 +33,3 @@ This package will create a folder at root level of your app containing a `.png` 
 
 **The are 71 devices/resolutions available inside the package (thanks to Puppeteer).**
 
-**Demo:**
-
-![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
