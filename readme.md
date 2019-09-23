@@ -1,6 +1,14 @@
 **Snap This**
 
-Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of seconds!
+Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes!
+
+_TO DO:_
+- [x] Simulating real devices
+- [x] Local Storage Support
+- [x] Await important elements
+- [x] Dynamic page view
+- [ ] Cookies support
+- [ ] Dynamic device list
 
 **Install**: 
 `npm i snap-this`
