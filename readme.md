@@ -10,6 +10,8 @@ _TO DO:_
 - [ ] Cookies support
 - [ ] Dynamic device list
 
+<hr>
+
 **Install**: 
 `npm i snap-this`
 
