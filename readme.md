@@ -1,7 +1,5 @@
 **Snap This**
 
-![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
-
 Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes!
 
 - [x] Simulating real devices
@@ -10,6 +8,9 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 - [x] Dynamic page view
 - [ ] Cookies support
 - [ ] Dynamic device list
+
+**Demo:**
+![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
 
 <hr>
 
