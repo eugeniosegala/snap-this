@@ -1,12 +1,18 @@
+const url = process.env['WEBSITE'];
+const mainSelector = process.env['SELECTOR'];
+const withStorage = process.env['LOCAL_STORAGE'];
+
 const puppeteer = require('puppeteer');
+const { PendingXHR } = require('pending-xhr-puppeteer');
 const devices = require('puppeteer/DeviceDescriptors');
 const fs = require('fs');
 
 //const { devices } = require('./utils/devices');
-const { InflightRequests, cleanNames } = require('./utils/helpers');
+const { cleanNames, waitForVisible } = require('./utils/helpers');
+const { htmlContent } = require('./utils/template');
+const localStorageData = withStorage ? require(`./${withStorage}`) : false;
 
 const dir = './snap-this/';
-const url = process.env['WEBSITE'];
 
 if (!fs.existsSync(dir)){
   fs.mkdirSync(dir);
@@ -14,52 +20,54 @@ if (!fs.existsSync(dir)){
 
 const snapThis = async () => {
 
-  const browser = await puppeteer.launch({ ignoreHTTPSErrors: true });
+  const browser = await puppeteer.launch({ headless: true, ignoreHTTPSErrors: true });
 
-  console.log('Starting...');
   console.log('Taking screenshots...');
 
-  for (let i = 0; i < devices.length; i++) {
+  for (let i = 0; i < 10; i++) {
 
-    process.stdout.write(`${i}/${devices.length}\r`);
+    process.stdout.write(`${parseInt(((i / devices.length) * 100))}%\r`);
 
     const page = await browser.newPage();
 
-    const tracker = new InflightRequests(page);
+    const pendingXHR = new PendingXHR(page);
 
-    await page.goto(url).catch(e => {
-      console.log('Navigation failed: ' + e.message);
-      const inflight = tracker.inflightRequests();
-      console.log(inflight.map(request => '  ' + request.url()).join('\n'));
-    });
+    await page.goto(url);
 
-    tracker.dispose();
+    await pendingXHR.waitForAllXhrFinished();
+
+    if (withStorage) {
+      for (let inc = 0; inc < localStorageData.length; inc++) {
+        const a = localStorageData[inc].name;
+        const b = localStorageData[inc].data;
+        await page.evaluate(({a, b}) => {
+          localStorage.setItem(a, b);
+        }, {a, b});
+      }
+    }
 
     const device = devices[i];
 
     await page.emulate(device);
+
+    if (mainSelector) {
+      await waitForVisible(page, mainSelector);
+    }
+
     await page.screenshot({ path: `${dir}${cleanNames(device.name)}.png`});
   }
 
-  const htmlElement = devices.map(device => {
-    return `
-          <h1 style="background-color: #00BCD4">
-            Device: <span style="color: #FFEB3B">${device.name}</span>
-            Resolution: <span style="color: #FFEB3B">${device.viewport.width} x ${device.viewport.height}</span>
-          </h1>
-          <img style="border: 2px solid black; max-height: 700px; max-width: 70%;" src="./${cleanNames(device.name)}.png"  alt="${cleanNames(device.name)}" />`;
-  });
-
-  var htmlContent = `
-    <html lang="en">
-        ${htmlElement}
-    </html>`;
-
-  fs.writeFileSync(`${dir}index.html`, htmlContent, (error) => { /* handle error */ });
+  fs.writeFileSync(`${dir}index.html`, htmlContent, (error) => { console.log(error) });
 
   await browser.close();
 
-  console.log('Completed.')
+  console.log('Completed.');
+
+  process.exit()
 };
+
+process.on('message', () => {
+  process.send(snapThis());
+});
 
 module.exports = snapThis;

@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const { fork } = require('child_process');
 
 const compute = fork('./index');

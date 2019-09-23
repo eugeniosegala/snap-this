@@ -1,3 +1,4 @@
+// legacy
 const devices = [
   {
     name: 'iPhone XR',
