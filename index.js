@@ -10,7 +10,7 @@ const fs = require('fs');
 //const { devices } = require('./utils/devices');
 const { cleanNames, waitForVisible } = require('./utils/helpers');
 const { htmlContent } = require('./utils/template');
-const localStorageData = withStorage ? require(`./${withStorage}`) : false;
+const localStorageData = withStorage ? require(`../../${withStorage}`) : false;
 
 const dir = './snap-this/';
 
@@ -24,7 +24,7 @@ const snapThis = async () => {
 
   console.log('Taking screenshots...');
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < devices.length; i++) {
 
     process.stdout.write(`${parseInt(((i / devices.length) * 100))}%\r`);
 
