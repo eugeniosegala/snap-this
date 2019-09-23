@@ -20,7 +20,7 @@ _Full command:_ <br>
 
 This package will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
 
-**The are 71 devices/resolutions available inside the package.**
+**The are 71 devices/resolutions available inside the package (thanks to Puppeteer).**
 
 **Demo:**
 
