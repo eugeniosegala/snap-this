@@ -33,4 +33,4 @@ This package will create a folder at root level of your app containing a `.png` 
 
 **Demo:**
 
-![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-demo.gif)
+![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
