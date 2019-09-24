@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/snap-this
 
 # Runtime data
 pids
