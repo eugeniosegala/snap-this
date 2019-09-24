@@ -18,7 +18,7 @@ Snap This is a tool based on **Puppeteer** that allows you to make screenshots a
 **Install**: 
 `npm i snap-this`
 
-**Usage**: `WEBSITE=https://en.wikipedia.org/ snap-this`
+**Usage**: `WEBSITE=https://en.wikipedia.org/ snap-this` or `WEBSITE=https://en.wikipedia.org/ npx snap-this` 
 
 _Options:_ <br>
 
