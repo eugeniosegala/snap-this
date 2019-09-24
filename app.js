@@ -1,9 +1,3 @@
-const { fork } = require('child_process');
+const snapThis = require('./index');
 
-const compute = fork('./index');
-
-compute.send('start');
-
-compute.on('message', () => {
-  console.log('Starting...');
-});
+snapThis();

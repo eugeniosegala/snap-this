@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-const { fork } = require('child_process');
+const snapThis = require('../index');
 
-const compute = fork(__dirname + '/../index');
-
-compute.send('start');
-
-compute.on('message', () => {
-  console.log('Starting...');
-});
+snapThis();

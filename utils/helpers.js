@@ -1,14 +1,25 @@
 const cleanNames = (url) => {
-  return url.toString()                                      // Convert to string
-      .normalize('NFD')                                // Change diacritics
-      .replace(/[\u0300-\u036f]/g,'') // Remove illegal characters
-      .replace(/\s+/g,'-')            // Change whitespace to dashes
-      .toLowerCase()                                         // Change to lowercase
-      .replace(/&/g,'-and-')          // Replace ampersand
-      .replace(/[^a-z0-9\-]/g,'')     // Remove anything that is not a letter, number or dash
-      .replace(/-+/g,'-')             // Remove duplicate dashes
-      .replace(/^-*/,'')              // Remove starting dashes
-      .replace(/-*$/,'');             // Remove trailing dashes
+  return url
+        // Convert to string
+        .toString()
+        // Change diacritics
+        .normalize('NFD')
+        // Remove illegal characters
+        .replace(/[\u0300-\u036f]/g,'')
+        // Change whitespace to dashes
+        .replace(/\s+/g,'-')
+        // Change to lowercase
+        .toLowerCase()
+        // Replace ampersand
+        .replace(/&/g,'-and-')
+        // Remove anything that is not a letter, number or dash
+        .replace(/[^a-z0-9\-]/g,'')
+        // Remove duplicate dashes
+        .replace(/-+/g,'-')
+        // Remove starting dashes
+        .replace(/^-*/,'')
+        // Remove trailing dashes
+        .replace(/-*$/,'');
 };
 
 /** Internal method to determine if an elementHandle is visible on the page. */

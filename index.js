@@ -7,7 +7,7 @@ const { PendingXHR } = require('pending-xhr-puppeteer');
 const devices = require('puppeteer/DeviceDescriptors');
 const fs = require('fs');
 
-//const { devices } = require('./utils/devices');
+// const { devices } = require('./utils/devices');
 const { cleanNames, waitForVisible } = require('./utils/helpers');
 const { htmlContent } = require('./utils/template');
 const localStorageData = withStorage ? require(`../../${withStorage}`) : false;
@@ -19,6 +19,8 @@ if (!fs.existsSync(dir)){
 }
 
 const snapThis = async () => {
+
+  console.log('Starting...');
 
   const browser = await puppeteer.launch({ headless: true, ignoreHTTPSErrors: true });
 
@@ -38,11 +40,11 @@ const snapThis = async () => {
 
     if (withStorage) {
       for (let inc = 0; inc < localStorageData.length; inc++) {
-        const a = localStorageData[inc].name;
-        const b = localStorageData[inc].data;
-        await page.evaluate(({a, b}) => {
-          localStorage.setItem(a, b);
-        }, {a, b});
+        const name = localStorageData[inc].name;
+        const data = localStorageData[inc].data;
+        await page.evaluate(({name, data}) => {
+          localStorage.setItem(name, data);
+        }, {name, data});
       }
     }
 
@@ -63,11 +65,6 @@ const snapThis = async () => {
 
   console.log('Completed.');
 
-  process.exit()
 };
-
-process.on('message', () => {
-  process.send(snapThis());
-});
 
 module.exports = snapThis;
