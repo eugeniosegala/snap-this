@@ -1,6 +1,4 @@
-<img src="http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png" width="300" title="Snap This logo">
-
-<hr>
+<h1><img src="http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png" width="300" title="Snap This logo"></h1>
 
 Snap This is a tool based on **Puppeteer** that allows you to make screenshots automatically for different devices and different resolutions in a couple of minutes on Chrome!
 
