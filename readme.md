@@ -1,6 +1,6 @@
 <h1>Snap This</h1>
 
-Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes!
+Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes on Chrome!
 
 - [x] Simulating devices
 - [x] Local Storage Support
