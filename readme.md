@@ -2,7 +2,7 @@
 
 Snap This is a tool based on **Puppeteer** that allow you to make screenshots for different devices and different resolutions in a couple of minutes!
 
-- [x] Simulating real devices
+- [x] Simulating devices
 - [x] Local Storage Support
 - [x] Await important elements before screenshots
 - [x] Dynamic showcase
