@@ -1,5 +1,5 @@
 
-![SnapThis logo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png | width=300)
+![SnapThis logo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png)
 
 <hr>
 
