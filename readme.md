@@ -6,7 +6,7 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 - [x] Local Storage Support
 - [x] Await important elements before screenshots
 - [x] Dynamic showcase
-- [x] Wait for all network calls ([Pending XHR Puppeteer](https://github.com/jtassin/pending-xhr-puppeteer)
+- [x] Wait for all network calls ([Pending XHR Puppeteer](https://github.com/jtassin/pending-xhr-puppeteer))
 - [ ] Cookies support
 - [ ] Customizable device list
 
