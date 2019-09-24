@@ -13,12 +13,20 @@ Snap This is a tool based on **Puppeteer** that allows you to make screenshots a
 **Demo:**<br>
 ![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
 
-<hr>
+<br />
+
+<h2>Usage</h2>
 
 **Install**: 
 `npm i snap-this`
 
-**Usage**: `WEBSITE=https://en.wikipedia.org/ snap-this` or `WEBSITE=https://en.wikipedia.org/ npx snap-this` 
+_Commands:_
+
+`WEBSITE=https://en.wikipedia.org/ snap-this`
+
+`WEBSITE=https://en.wikipedia.org/ npx snap-this` _(without download the package or just to resolve the path to the `node_modules`)_
+
+`WEBSITE=https://thameslink.stage.otrl.io/ ./node_modules/.bin/snap-this` _(resolving the path manually)_
 
 _Options:_ <br>
 

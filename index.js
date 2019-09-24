@@ -10,7 +10,7 @@ const fs = require('fs');
 // const { devices } = require('./utils/devices');
 const { cleanNames, waitForVisible } = require('./utils/helpers');
 const { htmlContent } = require('./utils/template');
-const localStorageData = withStorage ? require(`../../${withStorage}`) : false;
+const localStorageData = withStorage ? require(`${process.cwd()}/${withStorage}`) : false;
 
 const dir = './snap-this/';
 
