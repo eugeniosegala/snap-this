@@ -8,7 +8,7 @@ Snap This is a tool based on **Puppeteer** that allow you to make screenshots fo
 - [x] Dynamic showcase
 - [x] Wait for all network calls ([Pending XHR Puppeteer](https://github.com/jtassin/pending-xhr-puppeteer))
 - [ ] Cookies support
-- [ ] Customizable device list
+- [ ] Customizable devices list
 
 **Demo:**<br>
 ![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
