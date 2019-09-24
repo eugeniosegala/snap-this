@@ -1,7 +1,4 @@
-
-![SnapThis logo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo-e1569364359642.png)
-
-<img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="256" title="Github Logo">
+<img src="http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png" width="300" title="Snap This logo">
 
 <hr>
 
