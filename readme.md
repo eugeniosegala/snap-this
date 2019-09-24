@@ -28,7 +28,7 @@ _Options:_ <br>
 
 [Local storage template](https://github.com/eugeniosegala/snap-this/blob/master/demo/local_sample.js)
 
-_Full command:_ <br>
+_Full command example:_ <br>
 `WEBSITE=https://en.wikipedia.org/ SELECTOR=".important-element" LOCAL_STORAGE="local-storage.js" snap-this`
 
 This package will create a folder at root level of your app containing a `.png` image for each device. It's also available an `index.html` file with the entire list.
