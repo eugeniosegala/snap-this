@@ -22,11 +22,11 @@ Snap This is a tool based on **Puppeteer** that allows you to make screenshots a
 
 _Commands:_
 
-`WEBSITE=https://en.wikipedia.org/ snap-this`
+`WEBSITE=https://en.wikipedia.org/ npx snap-this` _(npx will resolve the path to node_modules for you or just it execute everything without downloading the package)_
 
-`WEBSITE=https://en.wikipedia.org/ npx snap-this` _(without download the package or just to resolve the path to the `node_modules`)_
+`WEBSITE=https://en.wikipedia.org/ snap-this` _(basic command for advanced IDE's)_
 
-`WEBSITE=https://thameslink.stage.otrl.io/ ./node_modules/.bin/snap-this` _(resolving the path manually)_
+`WEBSITE=https://thameslink.stage.otrl.io/ ./node_modules/.bin/snap-this` _(resolving the node_modules path to the bin file manually)_
 
 _Options:_ <br>
 
