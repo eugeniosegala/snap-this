@@ -1,6 +1,6 @@
 <h1><img src="http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png" width="300" title="Snap This logo"></h1>
 
-Snap This is a tool based on **Puppeteer** that allows you to make screenshots automatically for different devices and different resolutions in a couple of minutes on Chrome!
+Snap This is a tool based on **Puppeteer** and built in Node JS that allows you to make screenshots automatically for different devices and different resolutions in a couple of minutes on Chrome!
 
 - [x] Simulating devices
 - [x] Local Storage Support
@@ -17,7 +17,10 @@ Snap This is a tool based on **Puppeteer** that allows you to make screenshots a
 
 <h2>Usage</h2>
 
-**Install**: 
+**Quick start**: <br />
+`WEBSITE=https://en.wikipedia.org/ npx snap-this` (with this command you don't need to install the package)
+
+**Install**: <br />
 `npm i snap-this`
 
 _Commands:_
@@ -28,7 +31,7 @@ _Commands:_
 
 `WEBSITE=https://thameslink.stage.otrl.io/ ./node_modules/.bin/snap-this` _(resolving the node_modules path to the bin file manually)_
 
-_Options:_ <br>
+_Options:_ <br />
 
 - **WEBSITE**=https://en.wikipedia.org/ _(define the app endpoint)_
 - **SELECTOR**=".important-element" _(wait for an important item before the snap)_
