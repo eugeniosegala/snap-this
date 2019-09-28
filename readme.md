@@ -11,7 +11,7 @@ Snap This is a tool based on **Puppeteer** and built in Node JS that allows you 
 - [ ] Customizable devices list
 
 **Demo:**<br>
-![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this-showcase.gif)
+![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this.gif)
 
 <br />
 
