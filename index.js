@@ -34,7 +34,7 @@ const snapThis = async () => {
 
     const pendingXHR = new PendingXHR(page);
 
-    await page.goto(url);
+    await page.goto(url, { waitUntil: 'networkidle2' });
 
     await pendingXHR.waitForAllXhrFinished();
 
