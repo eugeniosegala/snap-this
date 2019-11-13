@@ -1,6 +1,6 @@
 {
   "name": "snap-this",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "author": "Eugenio Segala",
   "description": "A tool to make quick screenshots for multiple mobile devices of your web app in a couple of minutes.",
   "keywords": [
@@ -26,6 +26,5 @@
   "dependencies": {
     "pending-xhr-puppeteer": "^2.1.0",
     "puppeteer": "^1.20.0"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
