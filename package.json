@@ -17,9 +17,7 @@
     "type": "git",
     "url": "https://github.com/eugeniosegala/snap-this"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bin": {
     "snap-this": "./bin/snap-this"
   },
