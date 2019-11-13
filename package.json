@@ -1,5 +1,5 @@
 {
-  "name": "snap-this",
+  "name": "@eugeniosegala/snap-this",
   "version": "1.2.10",
   "author": "Eugenio Segala",
   "description": "A tool to make quick screenshots for multiple mobile devices of your web app in a couple of minutes.",
