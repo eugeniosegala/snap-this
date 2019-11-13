@@ -11,7 +11,6 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
@@ -25,14 +24,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com
           scope: '@eugeniosegala'
-      - name: npm publish
-        run: |
-          LATEST=`npm view . version`
-          CURRENT=`cat package.json | jq -r .version`
-          if [ "$LATEST" != "$CURRENT" ]
-          then
-            npm ci
-            npm publish
-          fi
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
