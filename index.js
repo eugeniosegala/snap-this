@@ -56,7 +56,10 @@ const snapThis = async () => {
       await waitForVisible(page, mainSelector);
     }
 
-    await page.screenshot({ path: `${dir}${cleanNames(device.name)}.png`});
+    await page.screenshot({
+      path: `${dir}${cleanNames(device.name)}.png`,
+      fullPage: true,
+    });
   }
 
   fs.writeFileSync(`${dir}index.html`, htmlContent, (error) => { console.log(error) });
