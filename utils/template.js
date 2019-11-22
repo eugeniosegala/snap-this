@@ -9,7 +9,7 @@ const htmlElement = devices.map(device => {
             Device: <span style="color: #fff">${device.name}</span>
             Resolution: <span style="color: #fff">${device.viewport.width} x ${device.viewport.height}</span>
           </h1>
-          <img style="border: 2px solid black; max-height: 700px; max-width: 70%;" src="./${cleanNames(device.name)}.png"  alt="${cleanNames(device.name)}" />
+          <img style="border: 2px solid black; max-width: 500px;" src="./${cleanNames(device.name)}.png"  alt="${cleanNames(device.name)}" />
         </div>
       </div>
       `;
