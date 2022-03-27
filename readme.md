@@ -8,8 +8,6 @@ Snap This is a tool based on **Puppeteer** and built in Node JS that allows you 
 - [ ] Cookies support
 - [ ] Customizable devices list
 
-<br />
-
 <h2>Usage</h2>
 
 **Quick start**: <br />
