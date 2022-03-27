@@ -1,5 +1,3 @@
-<h1><img src="http://eugeniosegala.it/wp-content/uploads/2019/09/snap-logo.png" width="300" title="Snap This logo"></h1>
-
 Snap This is a tool based on **Puppeteer** and built in Node JS that allows you to make screenshots automatically for different devices and different resolutions in a couple of minutes on Chrome!
 
 - [x] Simulating devices
@@ -9,9 +7,6 @@ Snap This is a tool based on **Puppeteer** and built in Node JS that allows you 
 - [x] Wait for all network calls ([Pending XHR Puppeteer](https://github.com/jtassin/pending-xhr-puppeteer))
 - [ ] Cookies support
 - [ ] Customizable devices list
-
-**Demo:**<br>
-![Snap This demo](http://eugeniosegala.it/wp-content/uploads/2019/09/snap-this.gif)
 
 <br />
 
